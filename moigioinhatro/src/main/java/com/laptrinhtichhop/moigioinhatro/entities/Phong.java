@@ -47,6 +47,7 @@ public class Phong implements java.io.Serializable {
 	@Column(name = "mo_ta_them")
 	private String moTaThem;
 	
+	@Transient
 	@OneToMany(mappedBy = "maPhieuDang")
 	private Set<PhieuDangPhong> phieuDangPhongs = new HashSet<PhieuDangPhong>(0);
 

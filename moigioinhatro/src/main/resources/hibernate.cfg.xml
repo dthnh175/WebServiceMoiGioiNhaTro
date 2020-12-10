@@ -8,7 +8,7 @@
   <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=MoiGioiNhaTro</property>
   <property name="hibernate.connection.username">sa</property>
   <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
-  <property name="hibernate.enable_lazy_load_no_trans">true</property>
+  <property name="hibernate.show_sql">true</property>
   <mapping class="com.laptrinhtichhop.moigioinhatro.entities.Anh"/>
   <mapping class="com.laptrinhtichhop.moigioinhatro.entities.ChuPhong"/>
   <mapping class="com.laptrinhtichhop.moigioinhatro.entities.KhuVuc"/>

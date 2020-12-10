@@ -28,6 +28,7 @@ public class LoaiPhong implements java.io.Serializable {
 	@Column(name = "ten_loai_phong")
 	private String tenLoaiPhong;
 	
+	@Transient
 	@OneToMany(mappedBy = "maPhong")
 	private Set<Phong> phongs = new HashSet<Phong>(0);
 

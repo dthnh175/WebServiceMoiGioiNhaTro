@@ -59,6 +59,7 @@ public class PhieuDangPhong implements java.io.Serializable {
 	@Column(name = "trang_thai")
 	private Boolean trangThai;
 
+	@Transient
 	@OneToMany(mappedBy="maAnh")
 	private Set<Anh> anhs = new HashSet<Anh>(0);
 

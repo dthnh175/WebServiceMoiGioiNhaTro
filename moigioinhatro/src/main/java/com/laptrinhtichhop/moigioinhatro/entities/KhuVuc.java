@@ -28,6 +28,7 @@ public class KhuVuc implements java.io.Serializable {
 	@Column(name = "ten_khu_vuc")
 	private String tenKhuVuc;
 	
+	@Transient
 	@OneToMany(mappedBy = "maPhong")
 	private Set<Phong> phongs = new HashSet<Phong>(0);
 
