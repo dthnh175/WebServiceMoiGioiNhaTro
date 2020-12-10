@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+  <property name="hibernate.connection.password">abcd12345678</property>
+  <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=MoiGioiNhaTro</property>
+  <property name="hibernate.connection.username">sa</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+  <property name="hibernate.enable_lazy_load_no_trans">true</property>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.Anh"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.ChuPhong"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.KhuVuc"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.LoaiPhong"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.NguoiDiThue"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.NguoiDung"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.NhomNguoiDung"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.PhieuDangPhong"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.PhieuGiuCho"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.Phong"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.Quyen"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.QuyenNguoiDung"/>
+  <mapping class="com.laptrinhtichhop.moigioinhatro.entities.TienIch"/>
+ </session-factory>
+</hibernate-configuration>

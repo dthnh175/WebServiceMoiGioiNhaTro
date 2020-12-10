@@ -1,6 +1,7 @@
 package com.laptrinhtichhop.moigioinhatro.entities;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 // Generated Dec 9, 2020, 8:44:57 PM by Hibernate Tools 5.4.21.Final
 
@@ -9,6 +10,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "QUYEN_NGUOI_DUNG")
+@XmlRootElement
 public class QuyenNguoiDung implements java.io.Serializable {
 
 	/**
