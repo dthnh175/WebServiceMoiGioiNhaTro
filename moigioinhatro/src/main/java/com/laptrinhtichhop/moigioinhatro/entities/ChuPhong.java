@@ -43,6 +43,7 @@ public class ChuPhong implements java.io.Serializable {
 	@Column(name = "ten_dang_nhap")
 	private String tenDangNhap;
 
+	@Transient
 	@OneToMany(mappedBy="maPhieuDang")
 	private Set<PhieuDangPhong> phieuDangPhongs = new HashSet<PhieuDangPhong>(0);
 

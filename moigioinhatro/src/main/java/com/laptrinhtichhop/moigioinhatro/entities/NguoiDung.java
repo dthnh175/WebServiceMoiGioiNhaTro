@@ -27,6 +27,7 @@ public class NguoiDung implements java.io.Serializable {
 	@Column(name = "mat_khau")
 	private String matKhau;
 
+	@Transient
 	@OneToMany(mappedBy = "maQuyenNguoiDung")
 	private Set<QuyenNguoiDung> quyenNguoiDungs = new HashSet<QuyenNguoiDung>(0);
 

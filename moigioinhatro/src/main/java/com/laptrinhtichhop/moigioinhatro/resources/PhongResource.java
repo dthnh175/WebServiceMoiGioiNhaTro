@@ -12,11 +12,6 @@ import org.hibernate.Transaction;
 import com.laptrinhtichhop.moigioinhatro.entities.Phong;
 import com.laptrinhtichhop.moigioinhatro.util.HibernateUtil;
 
-//import jakarta.ws.rs.GET;
-//import jakarta.ws.rs.Path;
-//import jakarta.ws.rs.Produces;
-//import jakarta.ws.rs.core.MediaType;
-
 @Path("phong")
 public class PhongResource {
 
